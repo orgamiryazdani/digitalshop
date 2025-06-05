@@ -18,7 +18,6 @@ export const getProductsAPI = async () => {
   return response;
 };
 
-
 export const getProductsById = async (id: string) => {
   const result = await prisma.product.findFirst({
     where: { id },
