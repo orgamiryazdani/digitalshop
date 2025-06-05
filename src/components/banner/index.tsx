@@ -25,7 +25,12 @@ function Banner() {
             <div className="p-1">
               <Card>
                 <CardContent className="relative aspect-square h-[400px] w-full flex items-center justify-center p-6">
-                  <Image src={image} alt="banner" fill className="object-cover" />
+                  <Image
+                    src={image}
+                    alt="banner"
+                    fill
+                    className="object-cover"
+                  />
                 </CardContent>
               </Card>
             </div>
