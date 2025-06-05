@@ -44,7 +44,7 @@ export const upsertProduct = async (product: Product) => {
     });
   }
 
-  revalidatePath('/dashboard/products')
+  revalidatePath('/dashboard/products');
 
   return result;
 };
