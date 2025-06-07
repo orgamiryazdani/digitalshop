@@ -1,4 +1,4 @@
-import ProductForm from '../components/ProductForm';
+import ProductForm from '../components/ProductFormWithAction';
 import { getProductsById } from '../services';
 
 async function ProductDetailView(props: { id: string }) {
