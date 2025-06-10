@@ -1,3 +1,4 @@
+import { currentUser } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
 import React from 'react';
 
@@ -6,8 +7,8 @@ async function layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const user = true;
-  const isAdmin = user;
+  const user = await currentUser();
+  const isAdmin = user?.privateMetadata?.isAdmin;
   if (!isAdmin) redirect('/');
   return <div>{children}</div>;
 }
