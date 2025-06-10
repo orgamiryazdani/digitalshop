@@ -37,7 +37,7 @@ export default function RootLayout({
             color: '#f00',
           },
           formButtonPrimary: {
-            fontSize: 16
+            fontSize: 16,
           },
         },
       }}
